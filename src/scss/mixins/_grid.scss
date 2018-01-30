@@ -1,0 +1,38 @@
+// # Super simple grid column generator
+
+// Defaults to a 6 column grid, but can generate any grid system you need
+
+// ## Usage
+
+// ### Leveraging the default 6 columns
+
+// Sass:
+// .class {
+//   @include grid(4)
+// }
+
+// CSS:
+// .class {
+//   width: 66.66667%;
+//   padding: 0 1rem;
+// }
+
+// ### Custom number of columns
+
+// Sass:
+// .class {
+//   @include grid(7,12)
+// }
+
+// CSS:
+// .class {
+//   width: 58.33333%;
+//   padding: 0 1rem;
+// }
+
+@mixin grid( $col, $grid: 6, $float: left ) {
+	float: $float;
+	overflow: hidden;
+	padding: 0 1rem;
+	width: ( ( $col / $grid ) * 100 ) * 1%;
+}
