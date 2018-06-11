@@ -1,0 +1,22 @@
+body {
+	font-family: $body;
+	font-size: $type-default;
+	margin: 0 $margin;
+
+	@include min( 48rem ) {
+		margin: auto;
+		max-width: 35rem;
+	}
+}
+
+.masthead {
+	margin: 5rem 0;
+
+	h1 {
+		font-size: $type-subheading;
+	}
+}
+
+footer {
+	margin: 5rem 0;
+}

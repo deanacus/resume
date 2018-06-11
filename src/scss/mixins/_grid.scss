@@ -1,38 +1,52 @@
-// # Super simple grid column generator
+/**
+ * Simple little mixin to save time setting up a grid container
+ *
+ * Be warned, though - each direct child MUST be a grid element, or shit's
+ * gon' break, yo
+ */
 
-// Defaults to a 6 column grid, but can generate any grid system you need
+@mixin grid-container {
+	align-content: center;
+	align-items: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
-// ## Usage
+/**
+ *
+ * Simple grid item generator
+ *
+ * @param {number} $item-cols - the number of columns you want your grid item
+ * to take up
+ *
+ */
 
-// ### Leveraging the default 6 columns
+@mixin grid( $item-cols ) {
+	flex-basis: 100%;
+	margin: ($grid-gutter-width / 2) 0;
 
-// Sass:
-// .class {
-//   @include grid(4)
-// }
+	@include min( 30rem ) {
+		flex: $item-cols $item-cols 0;
+		margin: 0 ($grid-gutter-width / 2);
+	}
+}
 
-// CSS:
-// .class {
-//   width: 66.66667%;
-//   padding: 0 1rem;
-// }
 
-// ### Custom number of columns
+/**
+ *
+ * Mixin to overwrite the margins of the first and last items of a grid-container
+ *
+ */
+@mixin grid-position ( $position: '' ) {
+	margin: ($grid-gutter-width / 2) 0;
 
-// Sass:
-// .class {
-//   @include grid(7,12)
-// }
-
-// CSS:
-// .class {
-//   width: 58.33333%;
-//   padding: 0 1rem;
-// }
-
-@mixin grid( $col, $grid: 6, $float: left ) {
-	float: $float;
-	overflow: hidden;
-	padding: 0 1rem;
-	width: ( ( $col / $grid ) * 100 ) * 1%;
+	@include min( 30rem ) {
+		@if ($position == 'first') {
+			margin: 0 ($grid-gutter-width / 2) 0 0;
+		}
+		@else if ($position == 'last' ) {
+			margin: 0 0 0 ($grid-gutter-width / 2);
+		}
+	}
 }

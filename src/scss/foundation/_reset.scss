@@ -29,13 +29,14 @@ fieldset {
 	padding: 0;
 }
 
-img {
-	max-width: 100%;
+html {
+	background: $white;
+	color: $black;
+	font-family: $body;
+	font-size: 100%;
+	line-height: 1.6;
 }
 
-a {
-	text-decoration: none;
-	transition-duration: 320ms;
-	transition-property: color, background-color, text-decoration;
-	transition-timing-function: cubic-bezier( 1, 0, 0, 1 );
+img {
+	max-width: 100%;
 }

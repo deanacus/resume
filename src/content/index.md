@@ -6,7 +6,25 @@ I aim to deliver responsive, accessible, and fast performing websites and applic
 
 ## Work History
 
-### Sunsuper <span>2010 - present</span>
+### Comparethemarket.com.au <span>2017 - present</span>
+
+Front End Developer
+
+#### Major Projects:
+
+* EverPress
+
+    I was one of two developers to build and release a new custom WordPress theme to power the marketing site for CompareTheMarket.com.au. This theme requires minimal plugins (ACF), and makes extensive use of fully custom PHP classes to provide the necessary functionality. I was brought on to help develop the JavaScript portion of the theme, but have also contributed significantly to the PHP development for the theme
+
+* Do I Need Health Insurance? / Medicare Levy Surcharge Calculator / Lifetime Health Cover Loading Calculator
+
+    Tasked with building three separate calculators with a consistent UI, I built a custom library in ES6 to facilitate the creation of these quizzes/calculators with ease - requiring only a single object representing the questions, and minimal custom javascript to insert the quiz into the page.
+
+* Sergei Solutions Hub
+
+    A knowledge base for the product categories offered by CompareTheMarket.com.au, consisting of a landing page, plus category specific knowledge base pages, and featuring on page search and search autocomplete, this was built with WordPress custom post types and vanilla JavaScript to accomplish the on page search and search autocomplete.
+
+### Sunsuper <span>2010 - 2017</span>
 
 Front End Developer
 Content Manager
@@ -43,6 +61,19 @@ Data Entry/Mortgage Disbursement
 Member Services Officer/Teller
 
 ## Personal Projects
+
+* Elysium Editor
+
+    An experiment with Electron, a simple Markdown editor featuring:
+        
+        * Preview rendered markdown
+        * Open/Close/Save files
+        * Keyboard shortcuts for triggering the above
+        * Yarn/NPM scripts to package into a compiled executable
+
+* Webpack Starter Kit
+
+    Another simple starting point for new projects, this time built with Webpack,allowing a quick scaffolding process in order to speed up development
 
 * Personal Boilerplate (HTML, SASS, Gulp.js)
 
