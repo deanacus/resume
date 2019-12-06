@@ -1,4 +1,4 @@
-const experience = [
+export const experience = [
 	{
 		company: '',
 		title: '',
@@ -73,7 +73,7 @@ const experience = [
 	},
 ];
 
-const projects = [
+export const projects = [
 	{
 		name: '',
 		description: '',
@@ -84,11 +84,11 @@ const projects = [
 	},
 ];
 
-const skills = [
+export const skills = [
 	{
 		area: '',
 		skills: [],
 	},
 ];
 
-const qualifications = [];
+export const qualifications = [];
