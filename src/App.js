@@ -1,21 +1,31 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import {
+  Header,
+  Intro,
+  JobsList,
+  ProjectsList,
+  SkillsList,
+} from './Components/';
+
+import { GlobalStyles, theme, Separator } from './Components/Styled/'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Header />
+        <Separator />
+        <Intro />
+        <Separator />
+        <JobsList />
+        <Separator />
+        <ProjectsList />
+        <Separator />
+        <SkillsList />
+      </ThemeProvider>
     </div>
   );
 }
