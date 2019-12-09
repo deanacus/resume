@@ -1,5 +1,5 @@
 import React from 'react';
-import { DateTime } from '../Styled';
+import { DateTime, FlatList, FlatListItem } from '../Styled';
 
 export const JobProject = ({project}) => (
   <div>
@@ -11,5 +11,15 @@ export const JobProject = ({project}) => (
       <DateTime>{project.date}</DateTime>
     </h5>
     <p>{project.description}</p>
+    <h6>Technologies used</h6>
+    <FlatList>
+      {
+        project.technology.map(
+          tech => (
+            <FlatListItem className="technology" key={tech}>{tech}</FlatListItem>
+          )
+        )
+      }
+    </FlatList>
   </div>
 )

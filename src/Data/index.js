@@ -5,13 +5,18 @@ export const experience = [
 		start: 'August 2014',
 		end: 'November 2017',
 		description: 'I worked with Ektron CMS400.NET to maintain the main marketing site, along with the secure member portal and various other projects.',
-		projects: [
+		keyProjects: [
       {
         name: 'Accessibility Uplift',
         description: 'After the new outsourced website went live, there was a requirement to uplift the site in order to achieve WCAG AA compliance. Using a combination of WCAG guidelines, automated accessibility tools and an audit from Vision Australia, I updated various parts of the site to ensure that AA compliance was achieved.',
         date: '2017',
         url: 'https://www.sunsuper.com.au/',
         live: false,
+        technology: [
+          'HTML',
+          'CSS',
+          'JavaScript',
+        ],
       },
 			{
 				name: 'Responsive Member Portal Refresh',
@@ -19,6 +24,11 @@ export const experience = [
 				date: '2016',
         url: 'https://secure.sunsuper.com.au/MemberOnline/',
         live: true,
+        technology: [
+          'HTML',
+          'CSS',
+          'JavaScript',
+        ],
       },
       {
         name: 'Responsive Marketing Website Refresh',
@@ -26,6 +36,11 @@ export const experience = [
         date: '2015',
         url: 'https://www.sunsuper.com.au/',
         live: false,
+        technology: [
+          'HTML',
+          'CSS',
+          'JavaScript',
+        ],
       },
 		],
 	},
@@ -35,13 +50,19 @@ export const experience = [
 		start: 'November 2017',
 		end: 'Present',
 		description: 'As a Front End Developer at Compare the Market I was initiall focussed on building an maintaining the main marketing website - a fully bespoke WordPress theme - and have moved on to working with our other applications, including building a product UI from scratch in React, including helping to define the overall approach for future products.',
-		projects: [
+		keyProjects: [
 			{
 				name: 'EverPress',
 				description: 'A custom WordPress theme built to power the marketing website, this takes advantage fully custom PHP classes, ES2015 JavaScript, and a custom SCSS library. It uses minimal plugins - only Advanced Custom Fields is related to functionality - and is almost entirely component driven.',
 				date: '2018',
         url: 'https://www.comparethemarket.com.au/',
         live: true,
+        technology: [
+          'HTML',
+          'SCSS',
+          'JavaScript',
+          'WordPress'
+        ],
       },
       {
         name: 'Unnamed Product UI',
@@ -49,71 +70,96 @@ export const experience = [
         date: '2020',
         url: 'https://www.comparethemarket.com.au/',
         live: false,
+        technology: [
+          'JavaScript',
+          'React',
+          'Styled Components',
+          'Jest',
+        ],
       },
-			{
-				name: 'Financial Consciousness Index',
-				description: 'A microsite built to support an independent financial literacy report commissioned by Compare the Market. It houses an online version of an eBook, a savings tip generator, and a budgeting calculator, plus an interactive quiz to calculate the users own "Financial Consciousness Score".',
-				date: '2018',
-        url: 'https://www.comparethemarket.com.au/financial-consciousness/',
-        live: true,
-			},
 			{
 				name: 'Sergei Solutions Hub',
 				description: 'A knowledge base intended to support customers looking for answers to specific questions, using WordPress custom post types, Advanced Custom Fields, and JavaScript, I created an interface that allows users to type a question and matches key words to potential answers and scrolls them to the correct response.',
 				date: '2018',
         url: 'https://www.comparethemarket.com.au/sergei-solutions/',
         live: true,
+        technology: [
+          'HTML',
+          'SCSS',
+          'JavaScript',
+          'WordPress'
+        ],
 			},
-			{
-				name: 'Do I Need Health Insurance Calculator',
-				description: 'An interactive quiz that allows a user to answer a series of simple questions, and receive a recommendation of whether or not they should consider private health insurance, plus supporting evidence for that result.',
-				date: '2018',
-        url: 'https://www.comparethemarket.com.au/health-insurance/do-i-need-health-insurance/',
-        live: true,
-			},
-			{
-				name: 'Medicare Levy Surcharge Calculator',
-				description: 'Given that Compare the Market is most commonly known for health insurance, a common question that users have is "Will I be charged a Medicare Levy Surcharge?" With an old, outdated calculator written in jQUery that did not match the UI of the site, I developed a new calculator that fit much better.',
-				date: '2018',
-        url: 'https://www.comparethemarket.com.au/health-insurance/medicare-levy-surcharge-calculator/',
-        live: true,
-			},
-			{
-				name: 'Big Mac Index Interactive',
-				description: 'A single page microsite base on the Economist\'s concept of "The Big Mac Index". The data was retrieved from the Economist Github repository, then using a simple Node.js script converted into a format that suited our needs, including an AUD value, and the microsite developed.',
-				date: '2018',
-        url: 'https://www.comparethemarket.com.au/big-mac-index/',
-        live: true,
-			},
-			{
-				name: '10 Largest Soccer Stadiums In The World Interactive',
-				description: 'During the 2018 World Cup, a microsite was developed showcasing the 10 largest stadiums to have hosted a football/soccer game was built, including integrated 3D photography from Google Maps.',
-				date: '2018',
-        url: 'https://www.comparethemarket.com.au/10-largest-soccer-stadiums-in-the-world-by-capacity/',
-        live: true,
-			},
-			{
-				name: 'Top Destinations in Thailand for Aussies Interactive',
-				description: 'An interactive microsite showcasing the most popular destinations within Thailand for Australian travellers, this site uses inline SVG to showcase an interactive map, custom toggles to switch between normal and "Aussie" translations of content and a custom image lazy loading script that was laer rolled out across the rest of the site.',
-				date: '2019',
-        url: 'https://www.comparethemarket.com.au/thailand-map-for-aussies/',
-        live: true,
+    ],
+    minorProjects: [
+      {
+				name: 'Caclulators and Tools',
+				description: 'During my time at Compare the Market, I have developed a number of calculators, quizzes and tools. These are generally built with plain JavaScript, HTML and CSS, and use WordPress to retrieve the markup and content for the page.',
+        technology: [
+          'HTML',
+          'SCSS',
+          'JavaScript',
+          'WordPress'
+        ],
+        links: [
+          {
+            label: 'Do I need Health Insurance',
+            url: 'https://www.comparethemarket.com.au/health-insurance/do-i-need-health-insurance/',
+            date: '2018',
+            live: true,
+          },
+          {
+            label: 'Medicare Levy Surcharge Calculator',
+            date: '2018',
+            url: 'https://www.comparethemarket.com.au/health-insurance/medicare-levy-surcharge-calculator/',
+            live: true,
+          },
+          {
+            label: 'Financial Consciousness Quiz',
+            date: '2018',
+            url: '',
+            live: true,
+          }
+        ]
       },
       {
-				name: 'Top Destinations in Thailand for Aussies Interactive',
-				description: 'An interactive microsite showcasing the most popular destinations within Thailand for Australian travellers, this site uses inline SVG to showcase an interactive map, custom toggles to switch between normal and "Aussie" translations of content and a custom image lazy loading script that was laer rolled out across the rest of the site.',
-				date: '2019',
-        url: 'https://www.comparethemarket.com.au/thailand-map-for-aussies/',
-        live: true,
+        name: 'Microsites',
+        description: '',
+        links: [
+          {
+            name: 'Big Mac Index Interactive',
+            date: '2018',
+            url: 'https://www.comparethemarket.com.au/big-mac-index/',
+            live: true,
+          },
+          {
+            name: '10 Largest Soccer Stadiums In The World Interactive',
+            date: '2018',
+            url: 'https://www.comparethemarket.com.au/10-largest-soccer-stadiums-in-the-world-by-capacity/',
+            live: true,
+          },
+          {
+            name: 'Top Destinations in Thailand for Aussies Interactive',
+            date: '2019',
+            url: 'https://www.comparethemarket.com.au/thailand-map-for-aussies/',
+            live: true,
+          },
+          {
+            name: '10 Dog Breeds Australians Love the Most',
+            date: '2019',
+            url: 'https://www.comparethemarket.com.au/dog-breeds-aussies-love/',
+            live: true,
+          },
+        ],
+        technology: [
+          'HTML',
+          'SCSS',
+          'JavaScript',
+          'WordPress',
+          'React',
+        ]
       },
-      {
-        name: '10 Dog Breeds Australians Love the Most',
-        description: 'A single page microsite showcasing a list of the top 10 dog breeds that Aussies love, with interactive scroll effects',
-        date: '2019',
-        url: 'https://www.comparethemarket.com.au/dog-breeds-aussies-love/',
-        live: true,
-      },
-		],
+    ]
 	},
 ];
 
@@ -127,7 +173,7 @@ export const projects = [
         url: 'https://github.com/deanacus/password',
       },
       {
-        label: 'View Project',
+        label: 'Live',
         url: 'https://password.deanacus.com'
       }
     ],
@@ -148,7 +194,7 @@ export const projects = [
         url: 'https://github.com/deanacus/t'
       },
       {
-        label: 'Read the Blog Post',
+        label: 'Blog Post',
         url: 'https://deanacus.com/article/t-is-for-tasks/'
       },
     ],
@@ -165,7 +211,7 @@ export const projects = [
         url: 'https://github.com/deanacus/md-to-json'
       },
       {
-        label: 'View on NPM',
+        label: 'NPM',
         url: 'https://www.npmjs.com/package/@deanacus/md-to-json'
       }
     ],
@@ -176,36 +222,36 @@ export const projects = [
       'NPM',
     ],
 	},
-	{
-    name: 'Talks',
-    description: 'A project containing talks that I have given at Front End Learning sessions at work. Currently just housing a single talk introducing IntersectionObserver bvy using it to lazy load images.',
-    links: [
-      {
-        label: 'Github',
-        url: 'http://github.com/deanacus/talks'
-      },
-      {
-        label: 'View Project',
-        url: 'https://talks.deanacus.com/'
-      }
-    ],
-		technology: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Netlify'
-    ],
-	},
+	// {
+  //   name: 'Talks',
+  //   description: 'A project containing talks that I have given at Front End Learning sessions at work. Currently just housing a single talk introducing IntersectionObserver bvy using it to lazy load images.',
+  //   links: [
+  //     {
+  //       label: 'Github',
+  //       url: 'http://github.com/deanacus/talks'
+  //     },
+  //     {
+  //       label: 'Live',
+  //       url: 'https://talks.deanacus.com/'
+  //     }
+  //   ],
+	// 	technology: [
+  //     'HTML',
+  //     'CSS',
+  //     'JavaScript',
+  //     'Netlify'
+  //   ],
+	// },
 	{
     name: 'Ajax',
-    description: 'A javascript class that wraps XMLHTTPRequest in a promise and exposes <code>get</code> and <code>post</code> methods. My first NPM package.',
+    description: 'A javascript class that wraps XMLHTTPRequest in a promise and exposes GET and POST methods. My first NPM package.',
     links: [
       {
         label: 'Github',
         url: 'https://github.com/deanacus/ajax/'
       },
       {
-        label: 'View on NPM',
+        label: 'NPM',
         url: 'https://www.npmjs.com/package/@deanacus/ajax'
       },
     ],
@@ -213,25 +259,6 @@ export const projects = [
       'JavaScript',
       'XMLHTTPRequest',
       'NPM'
-    ],
-	},
-	{
-    name: 'Quit',
-    description: 'A responsive dashboard I made to encourage me to stay strong when I first quit smoking, featuring some calculations of money saved, time saved, and cigarettes not smoked, plus time elapsed since I quit smoking',
-    links: [
-      {
-        label: 'Github',
-        url: 'https://github.com/deanacus/quit'
-      },
-      {
-        label: 'View Project',
-        url: 'https://deanacus.github.io/quit/'
-      },
-    ],
-		technology: [
-      'HTML',
-      'CSS',
-      'JavaScript'
     ],
 	},
 ];

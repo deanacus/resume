@@ -17,13 +17,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Header />
-        <Separator />
         <Intro />
-        <Separator />
         <JobsList />
-        <Separator />
         <ProjectsList />
-        <Separator />
         <SkillsList />
       </ThemeProvider>
     </div>

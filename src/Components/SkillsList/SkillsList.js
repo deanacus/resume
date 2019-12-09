@@ -15,7 +15,6 @@ export const SkillsList = () => {
             return (
               <>
                 <SkillGroup skillGroup={skillGroup} />
-                <Separator />
               </>
             )
           }

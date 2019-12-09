@@ -14,7 +14,6 @@ export const ProjectsList = () => (
           return (
             <>
               <Project project={project} />
-              <Separator />
             </>
           )
         }

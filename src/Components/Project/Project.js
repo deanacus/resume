@@ -1,14 +1,31 @@
 import React from 'react';
-import { PaddedLink } from '../Styled';
+import { FlatList, FlatListItem } from '../Styled';
 
 export const Project = ({project}) => (
   <article>
     <h3>{project.name}</h3>
     <p>{project.description}</p>
-    <p>Links: {project.links.map(link => (<PaddedLink href={link.url} key={link.url}>{link.label}</PaddedLink>))}</p>
-    <p>Technology: </p>
-    <ul>
-      {project.technology.map(tech => <li className="technology">{tech}</li>)}
-    </ul>
+    <h4>Technologies used</h4>
+    <FlatList>
+      {
+        project.technology.map(
+          tech => (
+            <FlatListItem className="technology" key={tech}>{tech}</FlatListItem>
+          )
+        )
+      }
+    </FlatList>
+    <h4>Links</h4>
+    <FlatList>
+      {
+        project.links.map(
+          link => (
+            <FlatListItem key={link.url}>
+              <a href={link.url}>{link.label}</a>
+            </FlatListItem>
+          )
+        )
+      }
+    </FlatList>
   </article>
 )

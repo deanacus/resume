@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
   text-align: center;
@@ -13,11 +13,32 @@ export const Separator = styled.hr`
 
 export const PaddedLink = styled.a`
   display: inline-block;
-  padding-right: .5em;
+  ${({theme}) => theme.padding.pr[1]}
 `;
 
 export const DateTime = styled.time`
   color: ${ ({theme}) => theme.colours.charcoal.lightest };
   display: inline-block;
-  padding: 0 .5rem;
+  ${({theme}) => theme.padding.px[1]}
+`;
+
+export const FlatList = styled.ul`
+  display: flex;
+  list-style: none;
+  padding: 0;
+`;
+
+export const FlatListItem = styled.li`
+  ${({theme}) => theme.padding.pr[4]}
+`;
+
+export const JobTitle = styled.h3`
+  ${({theme}) => theme.margin.mb[1]}
+  ${({theme}) => theme.padding.pb[0]}
+`;
+
+
+export const JobSubTitle = styled.h4`
+  ${({theme}) => theme.padding.p[0]}
+  ${({theme}) => theme.margin.m[0]}
 `;

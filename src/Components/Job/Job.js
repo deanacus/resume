@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { JobProject } from '../'
-import { DateTime } from '../Styled';
+import { DateTime, JobSubTitle, JobTitle } from '../Styled';
 
 export const Job = ({job}) => (
   <article>
-    <h3>{job.title}</h3>
-    <h4>{job.company} <DateTime>{job.start} - {job.end}</DateTime></h4>
+    <JobTitle>{job.title}</JobTitle>
+    <JobSubTitle>{job.company} <DateTime>{job.start} - {job.end}</DateTime></JobSubTitle>
     <p>{job.description}</p>
-    <h4>Projects</h4>
+    <h4>Key Projects</h4>
     {
-      job.projects.map( project => <JobProject project={project} />)
+      job.keyProjects.map( project => <JobProject project={project} />)
     }
   </article>
 )

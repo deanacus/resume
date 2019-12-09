@@ -17,7 +17,6 @@ export const JobsList = () => {
             return (
               <>
                 <Job job={job} />
-                <Separator />
               </>
               )
             }
