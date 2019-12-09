@@ -3,7 +3,6 @@ import React from 'react';
 import { Job } from '../'
 
 import { experience } from '../../Data'
-import { Separator } from '../Styled';
 
 export const JobsList = () => {
   const reverseChronological = experience.reverse();

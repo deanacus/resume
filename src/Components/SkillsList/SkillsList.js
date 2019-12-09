@@ -3,7 +3,6 @@ import React from 'react';
 import { SkillGroup } from '../'
 
 import { skills } from '../../Data'
-import { Separator } from '../Styled';
 
 export const SkillsList = () => {
   return (

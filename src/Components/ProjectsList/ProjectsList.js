@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Project } from '../';
-import { Separator } from '../Styled';
 
 import { projects } from '../../Data';
 

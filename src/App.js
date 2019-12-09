@@ -9,7 +9,7 @@ import {
   SkillsList,
 } from './Components/';
 
-import { GlobalStyles, theme, Separator } from './Components/Styled/'
+import { GlobalStyles, theme } from './Components/Styled/'
 
 function App() {
   return (
