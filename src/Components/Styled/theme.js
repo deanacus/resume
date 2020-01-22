@@ -47,21 +47,12 @@ const colours = {
   },
   white: {
     default: `rgba(255,255,255)`,
-  }
-
+  },
 };
 
 const remSize = 10;
 
-const spacing = [
-  0,
-  8,
-  16,
-  24,
-  32,
-  48,
-  64,
-];
+const spacing = [0, 8, 16, 24, 32, 48, 64];
 
 const m = [
   `margin: ${spacing[0] / remSize}rem`,
@@ -73,7 +64,7 @@ const m = [
   `margin: ${spacing[6] / remSize}rem`,
 ];
 
-const mx =  [
+const mx = [
   `margin-right: ${spacing[0] / remSize}rem;
   margin-left: ${spacing[0] / remSize}rem;`,
   `margin-right: ${spacing[1] / remSize}rem;
@@ -90,7 +81,7 @@ const mx =  [
   margin-left: ${spacing[6] / remSize}rem;`,
 ];
 
-const my =  [
+const my = [
   `margin-top: ${spacing[0] / remSize}rem;
   margin-bottom: ${spacing[0] / remSize}rem;`,
   `margin-top: ${spacing[1] / remSize}rem;
@@ -107,7 +98,7 @@ const my =  [
   margin-bottom: ${spacing[6] / remSize}rem;`,
 ];
 
-const mt =  [
+const mt = [
   `margin-top: ${spacing[0] / remSize}rem;`,
   `margin-top: ${spacing[1] / remSize}rem;`,
   `margin-top: ${spacing[2] / remSize}rem;`,
@@ -117,7 +108,7 @@ const mt =  [
   `margin-top: ${spacing[6] / remSize}rem;`,
 ];
 
-const mr =  [
+const mr = [
   `margin-right: ${spacing[0] / remSize}rem;`,
   `margin-right: ${spacing[1] / remSize}rem;`,
   `margin-right: ${spacing[2] / remSize}rem;`,
@@ -127,7 +118,7 @@ const mr =  [
   `margin-right: ${spacing[6] / remSize}rem;`,
 ];
 
-const mb =  [
+const mb = [
   `margin-bottom: ${spacing[0] / remSize}rem;`,
   `margin-bottom: ${spacing[1] / remSize}rem;`,
   `margin-bottom: ${spacing[2] / remSize}rem;`,
@@ -137,7 +128,7 @@ const mb =  [
   `margin-bottom: ${spacing[6] / remSize}rem;`,
 ];
 
-const ml =  [
+const ml = [
   `margin-left: ${spacing[0] / remSize}rem;`,
   `margin-left: ${spacing[1] / remSize}rem;`,
   `margin-left: ${spacing[2] / remSize}rem;`,
@@ -155,7 +146,7 @@ const margin = {
   mr,
   mb,
   ml,
-}
+};
 
 const p = [
   `padding: ${spacing[0] / remSize}rem`,
@@ -167,7 +158,7 @@ const p = [
   `padding: ${spacing[6] / remSize}rem`,
 ];
 
-const px =  [
+const px = [
   `padding-right: ${spacing[0] / remSize}rem;
   padding-left: ${spacing[0] / remSize}rem;`,
   `padding-right: ${spacing[1] / remSize}rem;
@@ -184,7 +175,7 @@ const px =  [
   padding-left: ${spacing[6] / remSize}rem;`,
 ];
 
-const py =  [
+const py = [
   `padding-top: ${spacing[0] / remSize}rem;
   padding-bottom: ${spacing[0] / remSize}rem;`,
   `padding-top: ${spacing[1] / remSize}rem;
@@ -201,7 +192,7 @@ const py =  [
   padding-bottom: ${spacing[6] / remSize}rem;`,
 ];
 
-const pt =  [
+const pt = [
   `padding-top: ${spacing[0] / remSize}rem;`,
   `padding-top: ${spacing[1] / remSize}rem;`,
   `padding-top: ${spacing[2] / remSize}rem;`,
@@ -211,7 +202,7 @@ const pt =  [
   `padding-top: ${spacing[6] / remSize}rem;`,
 ];
 
-const pr =  [
+const pr = [
   `padding-right: ${spacing[0] / remSize}rem;`,
   `padding-right: ${spacing[1] / remSize}rem;`,
   `padding-right: ${spacing[2] / remSize}rem;`,
@@ -221,7 +212,7 @@ const pr =  [
   `padding-right: ${spacing[6] / remSize}rem;`,
 ];
 
-const pb =  [
+const pb = [
   `padding-bottom: ${spacing[0] / remSize}rem;`,
   `padding-bottom: ${spacing[1] / remSize}rem;`,
   `padding-bottom: ${spacing[2] / remSize}rem;`,
@@ -231,7 +222,7 @@ const pb =  [
   `padding-bottom: ${spacing[6] / remSize}rem;`,
 ];
 
-const pl =  [
+const pl = [
   `padding-left: ${spacing[0] / remSize}rem;`,
   `padding-left: ${spacing[1] / remSize}rem;`,
   `padding-left: ${spacing[2] / remSize}rem;`,
@@ -249,8 +240,7 @@ const padding = {
   pr,
   pb,
   pl,
-}
-
+};
 
 const fontSize = [
   '1.0rem',
@@ -262,14 +252,10 @@ const fontSize = [
   '3.4rem',
   '4.8rem',
   '6.0rem',
-  '9.6rem'
+  '9.6rem',
 ];
 
-const fontWeight = [
-  'regular',
-  'bold',
-  'black',
-];
+const fontWeight = ['regular', 'bold', 'black'];
 
 const fontFamily = {
   serif: '',
@@ -286,4 +272,4 @@ export const theme = {
   fontSize,
   fontWeight,
   fontFamily,
-}
+};
